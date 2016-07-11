@@ -77,7 +77,7 @@ bot.on('message', function(message) {
 	}
 
 	// TBA commands - Running with a custom fork of node-thebluealliance.
-	if (message.content.substring(0, 3) === 'TBA ') {
+
 		// Get help
 		if (message.content === 'TBA HELP') {
 			bot.sendMessage(message, 'http://www.stonemoney.xyz/FIRSTbot.html');
@@ -166,7 +166,6 @@ bot.on('message', function(message) {
 				});
 			}
 		});
-	}
 });
 
 
