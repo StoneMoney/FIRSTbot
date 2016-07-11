@@ -247,4 +247,4 @@ bot.on("message", function(message)
 
 
 
-bot.loginWithToken("MTc2ODY1NjQxOTU1OTgzMzYw.CgmOdw.qvO_5R8O7a756IR0eQqYVNg8xSI");
+bot.loginWithToken("");
