@@ -79,7 +79,7 @@ bot.on('message', function(message) {
 
 	// Get help
 	if (message.content === 'TBA HELP') {
-		bot.sendMessage(message, 'http://www.stonemoney.xyz/FIRSTbot.html');
+		bot.sendMessage(message, 'https://github.com/StoneMoney/FIRSTbot/wiki');
 	}
 	// Get team name
 	(message.content.match(/^TBA TEAM \d+/im) || []).forEach(function(match) {
