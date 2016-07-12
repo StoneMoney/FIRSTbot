@@ -16,6 +16,25 @@ var bot = new Discord.Client();
 var tba = initTBA('node-thebluealliance', 'Node.js wrapper library for the TBA v2 API', '1.1.1');
 
 bot.on('message', function(message) {
+	function makeTBAMatchCode(year, event, matchType, matchSeries, matchNum) {
+		var matchCode = year + event.toLowerCase() + '_';
+
+		switch (matchType) {
+			case 'QUALS':
+				matchCode += 'qm' + matchSeries;
+				break;
+			case 'QUARTERS':
+				matchCode += 'qf' + matchSeries + 'm' + matchNum;
+				break;
+			case 'SEMIS':
+				matchCode += 'sf' + matchSeries + 'm' + matchNum;
+				break;
+			case 'FINALS':
+				matchCode += 'f1m' + matchSeries;
+				break;
+		}
+		return matchCode;
+	}
 	// Misc. commands
 	switch (message.content.toLowerCase()) {
 		case 'mangolover':
@@ -137,26 +156,6 @@ bot.on('message', function(message) {
 				}
 			}
 		});
-
-		function makeTBAMatchCode(year, event, matchType, matchSeries, matchNum) {
-			var matchCode = year + event.toLowerCase() + '_';
-
-			switch (matchType) {
-				case 'QUALS':
-					matchCode += 'qm' + matchSeries;
-					break;
-				case 'QUARTERS':
-					matchCode += 'qf' + matchSeries + 'm' + matchNum;
-					break;
-				case 'SEMIS':
-					matchCode += 'sf' + matchSeries + 'm' + matchNum;
-					break;
-				case 'FINALS':
-					matchCode += 'f1m' + matchSeries;
-					break;
-			}
-			return matchCode;
-		}
 	});
 });
 
