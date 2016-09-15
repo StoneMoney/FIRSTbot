@@ -1,0 +1,17 @@
+{
+  "name": "matchbox",
+  "version": "1.0.0",
+  "description": "discord bot",
+  "main": "firstbot.js",
+  "dependencies": {
+    "discord.js": "^9",
+    "thebluealliance": "^1.1.2",
+    "tmi.js": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
