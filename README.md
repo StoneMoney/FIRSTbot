@@ -1,3 +1,4 @@
+![](http://i.imgur.com/UVLRx9v.png)
 # FIRSTbot
 A discord bot for FIRST Robotics
 Get it for your server - https://discordapp.com/oauth2/authorize?client_id=176865551262416896&scope=bot&permissions=0
