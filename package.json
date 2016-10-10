@@ -1,6 +1,6 @@
 {
   "name": "matchbox",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "discord bot",
   "main": "firstbot.js",
   "dependencies": {
@@ -13,5 +13,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
